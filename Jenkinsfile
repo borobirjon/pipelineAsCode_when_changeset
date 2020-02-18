@@ -1,9 +1,9 @@
 pipeline{
     agent any
     stages{
-        stage("Build"){
+        stage('Build'){
             when{
-                changeset glob: "*.js"
+                changeset pattern: "*.js"
             }
             steps{
                 echo "Hello World changeset JS"
