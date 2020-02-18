@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             when{
-                changeset pattern: "*.js"
+                changeset pattern: "WORLD.js", caseSensitive: ture
             }
             steps{
                 echo "Hello World changeset JS"
